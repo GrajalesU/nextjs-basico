@@ -1,4 +1,3 @@
-import Navbar from "components/Navbar";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
@@ -18,7 +17,6 @@ export default function ProductDetail() {
 
   return (
     <div>
-      <Navbar />
       <h1>Product detail</h1>
       {product && (
         <div>
