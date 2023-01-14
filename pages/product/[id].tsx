@@ -1,9 +1,30 @@
+import Navbar from "components/Navbar";
 import { useRouter } from "next/router";
-import React from "react";
+import { useEffect, useState } from "react";
 
 export default function ProductDetail() {
-  const {
-    query: { id },
-  } = useRouter();
-  return <div>Esta es la pagina del producto {id}</div>;
+  const router = useRouter();
+  const { id } = router.query;
+  const [product, setProduct] = useState<TProduct>();
+
+  useEffect(() => {
+    window
+      .fetch(`/api/avo/${id}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setProduct(data);
+      });
+  }, []);
+
+  return (
+    <div>
+      <Navbar />
+      <h1>Product detail</h1>
+      {product && (
+        <div>
+          <h2>{product.name}</h2>
+        </div>
+      )}
+    </div>
+  );
 }

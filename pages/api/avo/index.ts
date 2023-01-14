@@ -1,14 +1,12 @@
-import DB from '@database';
-import { IncomingMessage, ServerResponse } from "http";
+import DB from "@database";
+import { NextApiRequest, NextApiResponse } from "next";
 
-const allAvos = async (request:IncomingMessage, response: ServerResponse) => { 
-    const db = new DB()
-    const allEntries = await db.getAll()
-    const entriesLength = allEntries.length
+const allAvos = async (request: NextApiRequest, response: NextApiResponse) => {
+  const db = new DB();
+  const allEntries = await db.getAll();
+  const entriesLength = allEntries.length;
 
-    response.statusCode = 200 //ok
-    response.setHeader('Content-type',"application/json")
-    response.end(JSON.stringify({ data: allEntries, length: entriesLength }))
- }
+  response.status(200).json({ data: allEntries, length: entriesLength });
+};
 
- export default allAvos
+export default allAvos;
