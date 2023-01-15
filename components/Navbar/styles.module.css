@@ -19,6 +19,7 @@
     position: relative;
 }
 
+
 .selected::before {
     position: absolute;
     background: #fff;

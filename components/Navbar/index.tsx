@@ -27,7 +27,7 @@ export default function Navbar() {
           }`}
         >
           <Link href="/about">
-            <HeaderElement src="/images/basket.png" text="Canasta" />
+            <HeaderElement src="/images/basket.png" text="Canasta (0)" />
           </Link>
         </li>
       </ul>
