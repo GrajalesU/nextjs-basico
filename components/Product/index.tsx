@@ -1,6 +1,6 @@
 import styles from "./styles.module.css";
 
-interface ProductProps {
+export interface ProductProps {
   image: string;
   name: string;
   price: number;
