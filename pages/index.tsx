@@ -1,3 +1,4 @@
+import Presentation from "@components/Presentation";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -13,13 +14,13 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
-      <h1>Hola Platzi!</h1>
+    <>
+      <Presentation />
       <ul>
         {productList.map((product) => (
           <li key={product.id}>{product.name}</li>
         ))}
       </ul>
-    </div>
+    </>
   );
 }

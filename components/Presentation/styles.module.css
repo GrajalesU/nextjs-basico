@@ -1,0 +1,19 @@
+.presentation{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    align-items: center;
+    gap: 10px;
+}
+
+.presentationTitle{
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.presentationImg{
+    width: 32px;
+
+}
