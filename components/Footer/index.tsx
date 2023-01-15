@@ -20,7 +20,7 @@ export default function Footer() {
         <li className={styles.footerListColumn}>
           <h4 className={styles.footerTitle}>Made for</h4>
           <p>
-            <b>Platzi</b> and his <b>Next.JS course</b>
+            <b>Platzi</b> and its <b>Next.JS course</b>
           </p>
         </li>
       </ul>

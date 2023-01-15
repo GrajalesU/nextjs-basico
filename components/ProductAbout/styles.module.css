@@ -1,0 +1,37 @@
+.about{
+    background: #fff;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.05);
+}
+
+.aboutTitle{
+    font-weight: 600;
+    font-size: large;
+    margin-bottom: 20px;
+    color: var(--dark-primary-color);
+}
+
+.aboutDescription{
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(234, 234, 234);
+    margin-bottom: 20px;
+}
+
+.aboutTable{
+    border: 1px solid rgb(234, 234, 234);
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.aboutTable *{
+    border: 1px solid rgb(234, 234, 234);
+    padding: 10px;
+}
+
+.aboutTableTitle {
+    color: var(--dark-primary-color);
+    font-weight: 600;
+    text-align: left;
+}

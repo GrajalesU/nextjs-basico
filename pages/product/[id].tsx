@@ -1,5 +1,8 @@
+import ProductAbout from "@components/ProductAbout";
+import ProductContent from "@components/ProductContent";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import styles from "./styles.module.css";
 
 export default function ProductDetail() {
   const router = useRouter();
@@ -16,13 +19,13 @@ export default function ProductDetail() {
   }, []);
 
   return (
-    <div>
-      <h1>Product detail</h1>
+    <>
       {product && (
-        <div>
-          <h2>{product.name}</h2>
+        <div className={styles.container}>
+          <ProductContent {...product} />
+          <ProductAbout {...product.attributes} />
         </div>
       )}
-    </div>
+    </>
   );
 }
