@@ -1,0 +1,88 @@
+:root{
+    --primary-color: #12B886;
+    --primary-dark-color: #006439;
+    --primary-light-color: #008557;
+    --background-color: #F2FFEE;
+
+    --font-family: 'Sofia Sans', sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root{
+        --primary-color: #F2FFEE;
+        --background-color: #12B886;
+    }
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+img, picture, video, iframe, figure{
+    max-width: 100%;
+    width: 100%;
+    display: block ;
+    object-fit: cover;
+    object-position: center center;
+}
+
+a {
+   text-decoration: none; 
+   display: block;
+   color: inherit;
+}
+
+p a{
+    display: inline;
+}
+
+li {
+    list-style-type: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em{
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+::selection {
+    background-color: var(--primary-color);
+    color: var(--background-color)
+}
+
+form, input, textarea, select, button, label{
+    font-family: inherit;
+    font-size: inherit;
+    hyphens: auto;
+    background-color: transparent;
+    display: block;
+    color: inherit;
+}
+
+svg{
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}
+
+body{
+    min-height: 100vh;
+    font-size: 100%;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    line-height: 1.4em;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

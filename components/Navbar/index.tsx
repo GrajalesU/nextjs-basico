@@ -1,18 +1,26 @@
+import HeaderElement from "@components/HeaderElement";
 import Link from "next/link";
-
+import styles from "./styles.module.css";
 export default function Navbar() {
   return (
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav className={styles.nav}>
+      <ul className={styles.navList}>
+        <li className={`${styles.navElement} ${styles.selected}`}>
+          <Link
+            href="/"
+            style={{
+              fontWeight: 600,
+            }}
+          >
+            <HeaderElement src="/logo/aguacatesMor32.png" text="AguacateMor" />
+          </Link>
+        </li>
+        <li className={styles.navElement}>
+          <Link href="/about">
+            <HeaderElement src="/images/basket.png" text="Canasta" />
+          </Link>
+        </li>
+      </ul>
+    </nav>
   );
 }

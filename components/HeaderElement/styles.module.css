@@ -1,0 +1,14 @@
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logoImg{
+    width: 32px;
+}
+
+.logoName{
+    font-size: large;
+    letter-spacing: 1px;
+}
