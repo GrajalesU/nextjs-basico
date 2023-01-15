@@ -10,10 +10,14 @@
 
 .presentationTitle{
     font-size: x-large;
+    color: var(--primary-color);
     font-weight: 600;
 }
 
 .presentationImg{
     width: 32px;
+}
 
+.presentationSubtitle{
+    color: var(--dark-primary-color);
 }

@@ -1,7 +1,7 @@
 :root{
     --primary-color: #12B886;
-    --primary-dark-color: #006439;
-    --primary-light-color: #008557;
+    --dark-primary-color: #006439;
+    --light-primary-color: #008557;
     --background-color: #F2FFEE;
 
     --font-family: 'Sofia Sans', sans-serif;
@@ -11,6 +11,9 @@
     :root{
         --primary-color: #F2FFEE;
         --background-color: #12B886;
+        --dark-primary-color: rgb(255, 255, 255);
+        --light-primary-color: #f0fffa;
+
     }
 }
 

@@ -16,6 +16,7 @@ export default function Navbar() {
             href="/"
             style={{
               fontWeight: 600,
+              color: "var(--primary-color)",
             }}
           >
             <HeaderElement src="/logo/aguacatesMor32.png" text="AguacateMor" />

@@ -1,4 +1,5 @@
 import Presentation from "@components/Presentation";
+import Product from "@components/Product";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -18,7 +19,9 @@ export default function Home() {
       <Presentation />
       <ul>
         {productList.map((product) => (
-          <li key={product.id}>{product.name}</li>
+          <li key={product.id}>
+            <Product {...product} />
+          </li>
         ))}
       </ul>
     </>
