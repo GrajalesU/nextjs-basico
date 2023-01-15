@@ -32,8 +32,8 @@ const FUN_FACTS = [
 export default function FunFacts() {
   return (
     <ol className={styles.funFacts}>
-      {FUN_FACTS.map((funFact) => (
-        <FunFact {...funFact} />
+      {FUN_FACTS.map((funFact, idx) => (
+        <FunFact key={idx} {...funFact} />
       ))}
     </ol>
   );
