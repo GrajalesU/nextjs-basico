@@ -1,0 +1,31 @@
+.funFactElement{
+    counter-increment: item;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 45%;
+    gap: 30px;
+}
+
+.funFactElementTitle::before{
+    content: counter(item);
+    color: #808080;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 64px;
+    margin-right: 10px;
+}
+
+.funFactElementTitle{
+    font-size: 24px;
+    display: block;
+    height: 40px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.funFactElementContent{
+    font-size: 16px;
+    font-weight: 200;
+}
