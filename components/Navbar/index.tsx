@@ -24,10 +24,10 @@ export default function Navbar() {
         </li>
         <li
           className={`${styles.navElement} ${
-            pathname === "/about" && styles.selected
+            pathname === "/cart" && styles.selected
           }`}
         >
-          <Link href="/about">
+          <Link href="/cart">
             <HeaderElement src="/images/basket.png" text="Cart(0)" />
           </Link>
         </li>
