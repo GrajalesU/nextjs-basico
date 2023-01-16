@@ -3,7 +3,7 @@ import ProductList from "@components/ProductList";
 import Head from "next/head";
 import styles from "./styles.module.css";
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const res = await fetch("https://aguacate-mor.vercel.app/api/avo");
   const data: TAPIAvoResponse = await res.json();
   const { data: productList, length } = data;
