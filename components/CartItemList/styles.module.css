@@ -1,0 +1,26 @@
+.emptyCart{
+    background: rgb(255, 233, 194);
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid rgb(189, 131, 31);
+    border-radius: 5px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.emptyCartTitle{
+    font-weight: 600;
+    font-size: large;
+    color: rgb(189, 131, 31);
+    margin-bottom: 10px;
+}
+
+.emptyCartContent{
+    color: rgb(189, 131, 31);
+}
+
+.itemList{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}

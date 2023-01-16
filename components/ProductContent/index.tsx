@@ -1,34 +1,19 @@
+import AddToCart from "@components/AddToCart";
 import styles from "./styles.module.css";
 
 export default function ProductContent({
-  name,
-  image,
-  price,
-  sku,
+  product
 }: {
-  name: string;
-  image: string;
-  price: number;
-  sku: string;
+ product: TProduct
 }) {
   return (
     <div className={styles.product}>
-      <img src={image} alt={`${name}`} />
+      <img src={product.image} alt={`${product.name}`} />
       <div className={styles.productDetail}>
-        <h1 className={styles.productDetailName}>{name}</h1>
-        <span className={styles.productDetailPrice}>{price}</span>
-        <span className={styles.productDetailSku}>SKU: {sku}</span>
-        <div className={styles.flex}>
-          <input className={styles.productInput} type="number" min={1} />
-          <button className={styles.productBtn}>
-            <img
-              className={styles.productIcon}
-              src="/images/cart.svg"
-              alt="cart"
-            />
-            Add to Cart
-          </button>
-        </div>
+        <h1 className={styles.productDetailName}>{product.name}</h1>
+        <span className={styles.productDetailPrice}>{product.price}</span>
+        <span className={styles.productDetailSku}>SKU: {product.sku}</span>
+        <AddToCart product={product}/>
       </div>
     </div>
   );

@@ -1,0 +1,33 @@
+.summary{
+    background: rgb(255, 255, 255);
+    width: 95%;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid rgb(172, 172, 172);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.summary strong{
+    font-weight: 600;
+}
+
+.summaryBtn{
+    background: rgb(34, 34, 34);
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.summaryBtn:hover{
+    background: #000;
+}
+
+
+.line{
+    border-top: 1px solid rgb(172, 172, 172);
+    padding-top:20px;
+}

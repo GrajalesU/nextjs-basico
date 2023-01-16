@@ -6,7 +6,7 @@ export default function HeadElement({
   text,
 }: {
   src: string;
-  text: string;
+  text: string | React.ReactNode;
 }) {
   return (
     <div className={styles.logo}>

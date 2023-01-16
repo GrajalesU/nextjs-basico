@@ -42,33 +42,3 @@
     border-radius: 5px;
 }
 
-.flex{
-    display: flex;
-}
-
-.productBtn{
-    display: flex;
-    width: 40%;
-    padding: 5px 10px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-
-    align-items: center;
-    gap: 5px 15px;
-    background: var(--light-primary-color);
-    color: #fff;
-}
-
-.productInput{
-    width: 50%;
-    border: 1px solid rgb(133, 133, 133);
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    padding: 5px 10px;
-}
-
-.productIcon{
-    max-width: 32px;
-    object-fit: contain;
-    fill: #fff;
-}

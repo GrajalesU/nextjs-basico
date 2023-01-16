@@ -1,5 +1,6 @@
 import Presentation from "@components/Presentation";
 import ProductList from "@components/ProductList";
+import Head from "next/head";
 import { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 export default function Home() {
@@ -18,6 +19,9 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>AguacateMor</title>
+      </Head>
       <Presentation />
       <small className={styles.length}>{length} elements</small>
       <ProductList items={productList} />

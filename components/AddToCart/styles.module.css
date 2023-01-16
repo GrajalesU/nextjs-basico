@@ -1,0 +1,57 @@
+.flex{
+    display: flex;
+    position: relative;
+}
+
+.productBtn{
+    display: flex;
+    width: 40%;
+    padding: 5px 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    align-items: center;
+    gap: 5px 15px;
+    background: var(--light-primary-color);
+    color: #fff;
+}
+
+.productInput{
+    width: 50%;
+    border: 1px solid rgb(133, 133, 133);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 5px 10px;
+}
+
+.productIcon{
+    max-width: 32px;
+    object-fit: contain;
+    fill: #fff;
+}
+
+.error{
+    color: rgb(255, 0, 0);
+    position: absolute;
+    top: 100%;
+}
+
+.added{
+    color: green;
+    position: absolute;
+    top: 100%;
+    animation-name: vanish;
+    animation-duration: 1s;
+}
+
+@keyframes vanish {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
