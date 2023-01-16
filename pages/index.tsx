@@ -1,22 +1,28 @@
 import Presentation from "@components/Presentation";
 import ProductList from "@components/ProductList";
 import Head from "next/head";
-import { useEffect, useState } from "react";
 import styles from "./styles.module.css";
-export default function Home() {
-  const [productList, setProductList] = useState<TProduct[]>([]);
-  const [length, setLength] = useState(0);
 
-  useEffect(() => {
-    window
-      .fetch("/api/avo")
-      .then((res) => res.json())
-      .then(({ data, length: newLength }) => {
-        setProductList(data);
-        setLength(newLength);
-      });
-  }, []);
+export const getServerSideProps = async () => {
+  const res = await fetch("https://aguacate-mor.vercel.app/api/avo");
+  const data: TAPIAvoResponse = await res.json();
+  const { data: productList, length } = data;
 
+  return {
+    props: {
+      productList,
+      length,
+    },
+  };
+};
+
+export default function Home({
+  productList,
+  length,
+}: {
+  productList: TProduct[];
+  length: number;
+}) {
   return (
     <>
       <Head>
