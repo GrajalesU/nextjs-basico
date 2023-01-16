@@ -8,10 +8,7 @@ interface FunFactProps {
 export default function FunFact({ title, content }: FunFactProps) {
   return (
     <li className={styles.funFactElement}>
-      <h2 className={styles.funFactElementTitle}>
-        
-        {title}
-      </h2>
+      <h2 className={styles.funFactElementTitle}>{title}</h2>
       <p className={styles.funFactElementContent}>
         {content}
         While avocados are grown in California and Florida, the majority sold in

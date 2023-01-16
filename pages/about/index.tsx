@@ -1,6 +1,6 @@
 import FunFacts from "@components/FunFacts";
-import styles from "./styles.module.css";
 import Head from "next/head";
+import styles from "./styles.module.css";
 
 export default function About() {
   return (

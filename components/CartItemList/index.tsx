@@ -5,7 +5,7 @@ export default function CartItemList({
   items,
 }: {
   items: CartItemType[];
- 
+
   loading?: boolean;
 }) {
   if (items.length === 0)

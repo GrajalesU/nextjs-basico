@@ -37,7 +37,7 @@ export default function Navbar() {
                   `cart(${count})`
                 ) : (
                   <>
-                    cart(9  <sup className={styles.sup}>+</sup>)
+                    cart(9 <sup className={styles.sup}>+</sup>)
                   </>
                 )
               }
