@@ -16,7 +16,7 @@ export const getStaticPaths = async () => {
 
   return {
     paths,
-    fallback: false
+    fallback: false,
   };
 };
 
@@ -37,14 +37,13 @@ export default function ProductDetail({ product }: { product: TProduct }) {
   return (
     <>
       <Head>
-        <title>AguacateMor | {product && product.name}</title>
+        <title>AguacateMor | {product.name}</title>
       </Head>
-      {product && (
-        <div className={styles.container}>
-          <ProductContent product={product} />
-          <ProductAbout {...product.attributes} />
-        </div>
-      )}
+
+      <div className={styles.container}>
+        <ProductContent product={product} />
+        <ProductAbout {...product.attributes} />
+      </div>
     </>
   );
 }
