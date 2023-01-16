@@ -1,6 +1,7 @@
 import FunFacts from "@components/FunFacts";
 import Head from "next/head";
 import styles from "./styles.module.css";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -12,9 +13,11 @@ export default function About() {
         <h1 className={styles.aboutTitle}>
           13 Surprising Facts About Avocados
         </h1>
-        <img
+        <Image
           src="https://platzi-avo.vercel.app/images/avocados.jpg"
           alt="Avocados cut in half"
+          width={900}
+          height={650}
         />
         <small className={styles.reference}>
           <span>Originally from</span>
