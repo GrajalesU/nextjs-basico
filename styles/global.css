@@ -7,7 +7,7 @@
     --font-family: 'Sofia Sans', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root{
         --primary-color: #F2FFEE;
         --background-color: #12B886;
@@ -15,7 +15,7 @@
         --light-primary-color: #f0fffa;
 
     }
-}
+} */
 
 *{
     padding: 0;
